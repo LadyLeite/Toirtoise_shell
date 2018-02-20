@@ -1,0 +1,262 @@
+  /* Universal styles */
+  body{
+    background-color: white;
+    font-size: 18px;
+    line-height: 1.4;
+    font-family: Helvetica, sans-serif, comic;
+  }
+
+  span, li{
+    color: white;
+    font-size: 1rem;
+  }
+
+  h1{
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  h3{
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  /* Main container */
+  .container{
+    width: 960px;
+    height: 70rem;
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+  /* Opening banner */
+  .mainBanner{
+    padding-top: 1rem;
+    height: 30rem;
+    background-image: url("../resources/glasses.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 100%;
+  }
+
+  nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: cadetblue;
+    height: 3rem;
+    margin: 1rem 8rem;
+  }
+
+  nav #mobileMenu{
+    display: none;
+  }
+
+  .logoName{
+    display:flex;
+    align-items: center;
+  }
+
+  .logoName img{
+    padding-left: 2rem;
+    padding-right: 1rem;
+    height: 1.5rem;
+  }
+
+   .menu ul{
+    display: flex;
+  }
+
+   .menu li{
+    padding: 1rem 2rem 1rem 0;
+  }
+
+  .mainBanner h1{
+    float: right;
+    text-align: center;
+    padding: 1.5rem 5rem;
+    background-color: white;
+    color: black;
+    margin-right: 6rem;
+    margin-top: 14rem;
+  }
+
+  /* Information section */
+  .services{
+    display: flex;
+    justify-content: center;
+  }
+
+    .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    margin: 3rem;
+  }
+
+  .item p{
+      text-align: center;
+    }
+
+  .item #icon1{
+    width: 3.5rem;
+  }
+
+  .item #icon2, #icon3{
+    width: 5rem;
+  }
+
+  .businessInfo{
+    display: flex;
+    justify-content: center;
+    margin: 2.5%;
+  }
+
+  .infoBlock{
+    width: 35%;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5%;
+  }
+
+  .infoBlock h3{
+    width: 10rem;
+    background-color: cadetblue;
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    color: white;
+  }
+
+  .infoBlock p{
+    margin-top: 1rem;
+  }
+  /* Footer */
+  footer{
+    display: flex;
+    justify-content: flex-start;
+    padding: 4rem;
+    background-color: azure;
+  }
+
+  footer img{
+    height: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  /* Media queries */
+
+  /* Tablet landscape */
+  @media only screen and (max-width:1024px){
+     .container{
+      width: 100%;
+    }
+
+    .mainBanner{
+      height: 22rem;
+      padding-top: 0rem;
+    }
+
+    nav{
+      margin: 0rem;
+      width: 100%;
+    }
+
+
+    .mainBanner h1{
+      padding: 0.75rem 4rem;
+      color: black;
+      margin-right: 2rem;
+      margin-top: 5rem;
+      font-size: 1.33rem;
+    }
+  }
+
+  /* Tablet portrait */
+    @media only screen and (max-width:768px){
+      .container{
+        width: 100%;
+        height: 100%;
+      }
+
+      .logoName span{
+        display: none;
+      }
+
+      .businessInfo{
+        width: 100%;
+        flex-direction: column;
+      }
+
+      .infoBlock{
+        width: 100%;
+      }
+
+      .infoBlock h3{
+        text-align: center;
+        width: 100%;
+      }
+
+      .infoBlock p{
+        margin-top: 1rem;
+        font-size: 0.77rem;
+        margin-bottom: 4rem;
+      }
+    }
+
+  /* mobile */
+  @media only screen and (max-width:480px){
+    .container{
+      width: 100%;
+      height: 100%;
+    }
+
+    .mainBanner{
+      background-position: 20%;
+      height: 17rem;
+    }
+
+    .menu{
+      display: none;
+    }
+
+    nav #mobileMenu{
+      display: inline-block;
+      margin-right: 2rem;
+    }
+
+    .mainBanner h1{
+      padding: 1rem;
+      margin-top: 9rem;
+      font-size: 1rem;
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+
+    .services{
+      margin-top: 2.23rem;
+      flex-direction: column;
+    }
+
+     .item{
+       margin: 1.54rem;
+    }
+
+    .services p{
+      font-size: 0.77rem;
+    }
+
+    footer img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    footer p{
+      display: none;
+    }
+  }
